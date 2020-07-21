@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simon® Game</title>
+    <audio id="clip1">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="clip2">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="clip3">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="clip4">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+    </audio>
+</head>
+
+<body>
+    <div class="circle">
+        <div class="yg">
+            <div class="green quarter" id="green"></div>
+            <div class="yellow quarter" id="yellow"></div>
+        </div>
+        <div class="rb">
+            <div class="red quarter" id="red"></div>
+            <div class="blue quarter" id="blue"></div>
+        </div>
+        <div class="mid">
+            <div class="full">
+                <div>Simon<sup style="font-size: 5px;">&reg</sup><br>
+                    <div class="allbtns">
+                        <div class="start" id="start"></div>
+                        <div class="strict" id="strict"></div>
+                        <div class="switch">
+                            <div class="btn" id="onoff"></div>
+                        </div>
+                    </div>
+                    <div class="dis">
+                        <div class="display" id="display" style="font-family: 'VT323'; font-size: 9px">--</div>
+                        <div class="ind" id="indicator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>&copy The_Hyperboy</footer>
+</body>
+<script src="./app.js"></script>
+
+</html>
