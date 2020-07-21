@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+   background-color: rgb(0, 195, 255);
+}
+
+.red{
+    width: 100px;
+    height: 100px;
+    border-radius: 0 100px 0 0;
+    background-color: #9F0F17;/*#ff4c4c*/
+    border-top: 10px solid rgb(48, 48, 48);
+    border-right: 10px solid rgb(48, 48, 48);
+    border-bottom: 5px solid rgb(48, 48, 48);
+    border-left: 5px solid rgb(48, 48, 48);
+}
+.blue{
+    width: 100px;
+    height: 100px;
+    border-radius: 0 0 100px 0;
+    background-color: #094A8F;/*#1c8cff*/
+    border-top: 5px solid rgb(48, 48, 48);
+    border-right: 10px solid rgb(48, 48, 48);
+    border-bottom: 10px solid rgb(48, 48, 48);
+    border-left: 5px solid rgb(48, 48, 48);
+}
+.yellow{
+    width: 100px;
+    height: 100px;
+    border-radius: 0 0 0 100px;
+    background-color: #CCA707;/*#fed93f*/
+    border-top: 5px solid rgb(48, 48, 48);
+    border-right: 5px solid rgb(48, 48, 48);
+    border-bottom: 10px solid rgb(48, 48, 48);
+    border-left: 10px solid rgb(48, 48, 48);
+}
+.green{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px 0 0 0;
+    background-color: #00A74A; /*#13ff7c*/
+    border-top: 10px solid rgb(48, 48, 48);
+    border-right: 5px solid rgb(48, 48, 48);
+    border-bottom: 5px solid rgb(48, 48, 48);
+    border-left: 10px solid rgb(48, 48, 48);
+}
+
+.full {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 7px solid rgb(48,48,48);
+    background-color: white;
+    font-family: 'Alfa Slab One';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px
+}
+
+.mid{
+    position: absolute;
+    top: 50px;
+    left: 50px
+}
+
+.circle {
+    position: relative;
+    transform: scale(2);
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30vh
+}
+
+.rb {
+    position: absolute;
+    left: 100px;
+    top: 0
+}
+
+.start {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: red;
+    border: 1.5px solid rgb(41, 41, 41);
+    cursor: pointer;
+    box-shadow: 0px 1px 2px rgb(97, 97, 97)
+}
+
+.start:active {
+    box-shadow: none;
+    transform: translate(0,1px);
+}
+
+.strict {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: rgb(229, 241, 59);
+    border: 1.5px solid rgb(41, 41, 41);
+    cursor: pointer;
+    box-shadow: 0px 1px 2px rgb(97, 97, 97)
+}
+
+.strict:active {
+    box-shadow: none;
+    transform: translate(0,1px);
+}
+
+.display {
+    width: 15px;
+    height: 10px;
+    background-color: #32050C;
+    color: rgb(116, 0, 0);
+    text-align: center;
+    border-radius: 2px;
+    transform: scale(1.3);
+}
+
+.switch {
+    position: relative;
+    height: 10px;
+    width: 22px;
+    border-radius: 2px;
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+    border: 1px solid rgb(59, 59, 59);
+}
+
+.btn {
+    position:absolute;
+    top:1;
+    left: -0.5px;
+    height: 8.5px;
+    width: 10px;
+    border-radius: 1px;
+    border: 0.5px solid rgb(0, 0, 119);
+    background-color: rgb(23, 23, 167)
+}
+
+.allbtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dis {
+    display: flex;
+    margin-top: 7px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ind {
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #000000;
+    margin-left: 10px;
+    border: 1px solid rgb(36, 36, 36);
+}
+
+.dispon {
+    color: red
+}
+
+.stricton {
+    background-color: red;
+}
+
+.switchon {
+    left: 10.5px;
+}
+
+footer {
+    padding: 10px 0px 20px 0px;
+    width: 100%;
+    background-color: rgb(24, 24, 75);
+    color: gray;
+    font-family: 'Rubik';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 11px;
+    text-align: center;
+}
